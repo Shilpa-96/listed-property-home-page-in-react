@@ -1,0 +1,112 @@
+.product-card-container{
+        /* border: 3px solid blue; */
+        width: 400px;
+        height: auto;
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: rgba(34, 34, 35, 0.2) 0px 7px 29px 0px;
+        align-items: flex-start;
+        position: relative;
+    }
+.product-card-container .popular{
+    position: relative;
+    margin-top: -30px;
+    z-index: 9999;
+    background-color: #3847f3;
+    padding: 8px 28px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.popular::after {
+    bottom: -8px;
+    left: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #170bbe;
+    border-bottom-left-radius: 50px;
+
+}
+
+/* -------------------------- */
+.product-card-container .location{
+    color: rgb(66, 66, 66);
+    font-size: 12px;
+    font-weight: 500;
+}
+.product-card-container .name{
+    width: 90%;
+    padding-left: 8px;
+    display: flex;
+    align-self: flex-start !important;
+}
+.product-card-container .spicifications{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 13px;
+}
+.spicifications>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.product-card-container .emi-more{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-self: center;
+    font-weight: 620;
+    font-size: 13px;
+    margin: 15px 0;
+    align-items: center;
+}
+.product-card-container .location-icon{
+    margin-right: 5px;
+}
+.emi-more .price{
+    color: rgb(43, 43, 228);
+}
+.emi-more button{
+    background: none;
+    border-radius: 20px;
+    color: rgb(43, 43, 228);
+    padding: 10px 13px;
+    border: 1px solid rgb(43, 43, 228);
+}
+.rent-wishlist{
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    margin: 0 25px;
+    position: absolute;
+    z-index: 9999;
+    top: 20px;
+    color: rgb(43, 43, 228);
+}
+.rent-wishlist button{
+    background-color: white;
+    border: none;
+    color: rgb(43, 43, 228);
+    border-radius: 13px;
+    padding: 5px 10px;
+}
+.rent-wishlist span{
+    background-color: white;
+    height: 32px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

@@ -1,0 +1,28 @@
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    /* gap: 30px; */
+    row-gap: 70px;
+    padding: 40px;
+}
+
+.show-more{
+    display: flex;
+    justify-content: center;
+   margin-bottom: 30px;
+}
+.show-more button{
+    background-color: rgb(92, 92, 239);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    cursor: pointer;
+}
+
